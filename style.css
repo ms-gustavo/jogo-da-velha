@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  margin: auto;
+}
+
+label {
+  margin-top: 8px;
+}
+input {
+  padding: 5px;
+}
+button {
+  width: 50%;
+  margin: 5px auto;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+body {
+  display: grid;
+  place-content: center;
+}
+
+section#gameBoard {
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(3, 6rem);
+  grid-template-rows: repeat(3, 6rem);
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 19rem;
+}
+
+#gameBoard span {
+  background-color: white;
+  display: grid;
+  place-content: center;
+  font-size: 5rem;
+}
+
+#gameBoard span.win {
+  background-color: green;
+}
